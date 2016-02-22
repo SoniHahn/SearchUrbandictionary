@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Urbandictionary</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      body {
+        min-width:260px;
+        overflow-x:hidden;
+/*        font-family: Verdana, Arial, Helvetica, sans-serif;*/
+        font-size: 12px;
+        background-color: #1d2439;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #query{
+        float:left;
+        width:170px;
+        border:1px solid #dadada;
+        border-radius:3px;
+        padding:1px;    
+        padding-left: 10px;
+        margin-left: 11px;
+        margin-right: 10px;
+        margin-top: 15px;
+      }
+
+      #query:focus { 
+        outline:none;
+        border-color:#efff00;
+        box-shadow:0 0 5px #efff00;
+      }
+
+      #submit{
+        margin-top: 15px;
+      }
+
+      #container{
+        padding:10px;
+      }    
+
+      .title{
+        color:#333333;
+        background-color:#efff00;
+      }
+      .description{
+        color:#ffffff;
+        font-size: 11px;
+      }
+      .link{
+        color:#ffffff;
+        font-size: 11px;
+      }
+    </style>
+
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+    <form id="searchform">
+      <input type="text" id="query">
+      <button class="btn btn-default btn-xs" id="submit" type="submit">Search</button>
+    </form>
+    <div id="container">
+    </div>
+  </body>
+</html>
